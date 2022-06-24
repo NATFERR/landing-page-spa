@@ -10,11 +10,13 @@
 
 body {
     font-family: 'Comfortaa', cursive;
+    color: white
 
 }
 
 .rectangle-1{
-    background-color: #eee2e2;
+    background-color: #cda582;
+    font-size: small;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -52,6 +54,7 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
 }
 
 i.fa-solid.fa-spa {
@@ -59,7 +62,7 @@ i.fa-solid.fa-spa {
     margin-left: 5px;
 }
 .logo {
-    color: #b3a5a5;
+    color: #CDA582;
     font-family: 'Rajdhani', sans-serif;
     letter-spacing: 10px;
     font-size: 30px;
@@ -76,10 +79,15 @@ i.fa-solid.fa-spa {
     text-transform: uppercase;
     font-size: 13px;
 }
+.main {
+    background-color: #cda582;
+}
 
 .main .image {
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    font-size: small;
 }
