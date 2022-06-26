@@ -16,8 +16,8 @@ body {
 
 .rectangle-1{
     background-color: #cda582;
-    font-size: small;
-    padding: 10px;
+    font-size: .8rem;
+    padding: 1em; /*this value is referencing the font size asigned above (inside this class)*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 
 .contact-menu .left {
     list-style: none;
-    gap: 28px;
+    gap: 28px; /*Funciona, mas não é suportado pela maioria dos browzers. Qual a solução alternativa?*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,13 +44,12 @@ body {
 
 /*para dar espaço entre os ícones e o texto*/
 i {
-    margin-right: 5px;
+    margin-right: 1em;
 }
 
 /*segundo retangulo do menu principal*/
 .rectangle-2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 1em auto 1em; /*Top, Horizontal, Bottom*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -58,26 +57,26 @@ i {
 }
 
 i.fa-solid.fa-spa {
-    font-size: 70px;
-    margin-left: 5px;
+    font-size: 4rem;
+    /* margin-left: 5px; nao precisou mas nao esta reponsivo */
 }
 .logo {
     color: #CDA582;
     font-family: 'Rajdhani', sans-serif;
-    letter-spacing: 10px;
-    font-size: 30px;
-    margin: 0;
+    letter-spacing: 0.2em;
+    font-size: 2em;
+    /* margin: 0; */
 }
 
 .navbar{
-    list-style: none;
+    /* list-style: none; nao precisou*/
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 28px;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 0.8rem
 }
 .main {
     background-color: #cda582;
@@ -90,4 +89,8 @@ i.fa-solid.fa-spa {
     align-items: center;
     justify-content: space-around;
     font-size: small;
+}
+
+a {
+    /*como tirar a cor azul dos links?*/
 }
